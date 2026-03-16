@@ -1,0 +1,9 @@
+body,
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+
+    background-size: cover;
+    background-image: url('/src/assets/background/2.jpg') !important;
+    background-repeat: no-repeat !important;
+}
