@@ -30,7 +30,7 @@ video {
     h1 {
         font-size: 2rem !important;
     }
-    .icon {
+    .icon img {
         height: 100px !important;
     }
 }
