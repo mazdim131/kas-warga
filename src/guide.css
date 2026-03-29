@@ -1,0 +1,22 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+#content {
+    padding-top: 10%;
+    flex: 1; 
+}
+
+video {
+    filter: brightness(20%);
+    background-attachment: fixed;
+    -webkit-filter: brightness(20%);
+}
