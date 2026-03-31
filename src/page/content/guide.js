@@ -26,5 +26,4 @@ content.innerHTML = `
         <h2 class="text-white">6. Dukungan Pelanggan</h2>
         <p class="text-white">Jika Anda mengalami kesulitan atau memiliki pertanyaan, jangan ragu untuk menghubungi tim dukungan kami melalui halaman Contact.</p>
     </div>
-
     `

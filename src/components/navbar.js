@@ -1,6 +1,6 @@
 const navbar = document.getElementById("navbar");
 navbar.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="padding-top: 20px;">
         <div class="container-sm">
             <a class="navbar-brand fw-bold" href="/index.html" style="font-size: 20px;">KasWarga</a>
 
@@ -22,7 +22,7 @@ navbar.innerHTML = `
                 </ul>
 
                 <div class="d-flex gap-2">
-                  <a href="/src/page/guide.html" class="btn btn-light rounded-5 btn-lg">Guide</a>
+                    <a href="/src/page/guide.html" class="btn btn-light rounded-5 btn-lg">Guide</a>
                 </div>
             </div>
         </div>
