@@ -1,6 +1,6 @@
 const navbar = document.getElementById("navbar");
 navbar.innerHTML = `
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="padding-top: 20px;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-sm">
             <a class="navbar-brand fw-bold" href="/index.html" style="font-size: 20px;">KasWarga</a>
 
