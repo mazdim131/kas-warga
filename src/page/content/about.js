@@ -5,7 +5,7 @@ content.innerHTML = `
         Video Error!
     </video>
 
-            <div class="d-flex justify-content-center fade animate__animated animate__fadeInDown" style="margin-top: 5%;">
+            <div class="d-flex justify-content-center fade animate__animated animate__fadeInDown" style="margin-top: 15%;">
                 <a href="" class="d-flex text-decoration-none text-white gap-2">
                     <img src="/src/assets/images/profilDimas.png" alt="Profil Dimas" class="rounded-circle"
                         style="height: 50px;">
@@ -71,4 +71,4 @@ content.innerHTML = `
                     sosial. Seluruh transaksi penggalangan dana tercatat secara otomatis dan dapat dipantau oleh semua anggota secara
                     real-time.</p>
             </div>
-`﻿
+`
