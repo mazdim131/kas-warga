@@ -24,11 +24,8 @@ video {
     #content {
         padding-top: 30%;
     }
-    #footer {
-        padding-top: 30%;
-    }
     h1 {
-        font-size: 2rem !important;
+        font-size: 3rem !important;
     }
     .icon img {
         height: 150px !important;
