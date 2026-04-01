@@ -6,5 +6,5 @@
 - [x] Test filter functionality (add data, search by kegiatan/nama warga)
 - [ ] Use attempt_completion
 
-**Progress:** Plan approved. Implementing edits next.
+**Progress:** Complete. Filter now searches all fields.
 
