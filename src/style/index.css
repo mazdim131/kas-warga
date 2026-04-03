@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     scroll-behavior: smooth;
@@ -7,27 +8,37 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
+    /* background-color: #E6F0FA  !important; */
+    /* background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%); */
 }
 
 #content {
-    padding-top: 10%;
-    flex: 1; 
+    padding-top: 5%;
+    flex: 1;
 }
 
-video {
-    filter: brightness(20%);
-    background-attachment: fixed;
-    -webkit-filter: brightness(20%);
+.card {
+    box-shadow: none;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.3);
+    transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 576px) {
     #content {
-        padding-top: 30%;
+        padding-top: 10%;
     }
+
     h1 {
         font-size: 3rem !important;
     }
+
     .icon img {
         height: 150px !important;
+    }
+    .card3 {
+        margin-top: 20px;
     }
 }

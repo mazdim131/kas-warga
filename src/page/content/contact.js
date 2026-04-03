@@ -1,15 +1,15 @@
 const content = document.getElementById('content');
 content.innerHTML = `
-    <video autoplay muted loop playsinline id="myVideo" style="position: fixed; right: 0; bottom: 0; min-width: 100%; min-height: 100%; z-index: -1;">
-        <source src="/src/assets/videos/bgWhite.mp4" type="video/mp4">
-        Video Error!
-    </video>
 
-            <div class="container-sm fade animate__animated animate__fadeInDown">
+    <div class="container px-4">
+        <div class="row gx-5">
+            <div class="col-12 col-md-6">
+                <div class="p-3">
+                <div class="container-sm fade animate__animated animate__fadeInDown" style="margin-top: 10%;">
                 <div class="row justify-content-center">
-                    <div class="col-md-6 text-white">
-                        <h1 class="text-white" style="margin-top: 15%;">Contact Us</h1>
-                        <p class="text-white">Jika and memiliki pertanyaan atau ingin memberikan saran, anda bisa menghubungi kami
+                    <div class="col-md-6 text-black">
+                        <h1 class="text-black" style="margin-top: 15%; font-size: 50px;">Contact Us</h1>
+                        <p class="text-black" style="font-size: 14px;">Jika and memiliki pertanyaan atau ingin memberikan saran, anda bisa menghubungi kami
                         melewati email dan nomor telepon yang tertera, saran dan masukan anda merupakan penyemangat kami untuk
                         mengembangkan platform ini!</p>
 
@@ -22,8 +22,8 @@ content.innerHTML = `
                                 </svg>
                             </div>
                             <div>
-                                <h6 class="mb-0 fw-bold">Phone</h6>
-                                <p class="mb-0 text-white-50">+62 857 1027 6264</p>
+                                <h5 class="mb-0 fw-bold">Phone</h5>
+                                <h6 class="mb-0 text-black-50">+62 857 1027 6264</h6>
                             </div>
                         </div>
 
@@ -36,8 +36,8 @@ content.innerHTML = `
                                 </svg>
                             </div>
                             <div>
-                                <h6 class="mb-0 fw-bold">Email</h6>
-                                <p class="mb-0 text-white-50">mazdimdimashs@gmail.com</p>
+                                <h5 class="mb-0 fw-bold">Email</h5>
+                                <h6 class="mb-0 text-black-50">mazdimdimashs@gmail.com</h6>
                             </div>
                         </div>
 
@@ -50,9 +50,9 @@ content.innerHTML = `
                                 </svg>
                             </div>
                             <div>
-                                <h6 class="mb-0 fw-bold">Location</h6>
-                                <p class="mb-0 text-white-50">Jl. Wangun Tajur, Kec. Sindang Sari<br>Kab. Bogor, Jawa
-                                    Barat</p>
+                                <h5 class="mb-0 fw-bold">Location</h5>
+                                <h6 class="mb-0 text-black-50">Jl. Wangun Tajur, Kec. Sindang Sari<br>Kab. Bogor, Jawa
+                                    Barat</h6>
                             </div>
                         </div>
 
@@ -65,11 +65,20 @@ content.innerHTML = `
                                 </svg>
                             </div>
                             <div>
-                                <h6 class="mb-0 fw-bold">Open Hours</h6>
-                                <p class="mb-0 text-white-50">Senin - Jum'at: 08.00 - 12.00</p>
+                                <h5 class="mb-0 fw-bold">Open Hours</h5>
+                                <h6 class="mb-0 text-black-50">Senin - Jum'at: 08.00 - 12.00</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 text-center">
+                <div class="p-3 d-flex sampulContact animate__animated animate__fadeInDown">
+                    <img src="/src/assets/images/foto-telpon.png" class="img-fluid" alt="foto orang lagi nelfon">
+                </div>
+            </div>
+        </div>
+    </div>
 `

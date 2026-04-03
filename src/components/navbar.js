@@ -2,22 +2,22 @@ const navbar = document.getElementById("navbar");
 navbar.innerHTML = `
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div class="container-sm">
-            <a class="navbar-brand fw-bold" href="/index.html" style="font-size: 20px;">KasWarga</a>
+            <a class="navbar-brand fw-bold text-black" href="/index.html" style="font-size: 20px;">KasWarga</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon bg-dark rounded-1"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto" id="myTab" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/index.html" style="font-size: 15px;">Home</a>
+                        <a class="nav-link text-black" href="/index.html" style="font-size: 15px;">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/src/page/about.html" style="font-size: 15px;">About Us</a>
+                        <a class="nav-link text-black" href="/src/page/about.html" style="font-size: 15px;">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="/src/page/contact.html" style="font-size: 15px;">Contact</a>
+                        <a class="nav-link text-black" href="/src/page/contact.html" style="font-size: 15px;">Contact</a>
                     </li>
                 </ul>
 
