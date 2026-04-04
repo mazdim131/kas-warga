@@ -1,5 +1,7 @@
 const content = document.getElementById('content');
 content.innerHTML = `
+    <a id="top"></a>
+
     <a href="#tutorial" class="text-black text-decoration-none">
         <div class="text-center animate__animated animate__fadeInDown">
             <h1 style="font-size: 50px;">HOW TO USE THIS WEBSITE?</h1>
@@ -48,11 +50,15 @@ content.innerHTML = `
     </div>
     </div>
     
+
+
+
+
     <div class="container-video justify-content-center animate__animated animate__fadeInDown" style="margin-top: 25%;">
-        <a id="tutorial"></a>
         <div class="container d-flex justify-content-center">
             <div class="row row-cols-1 row-cols-md-4 g-3">
                 <div class="col">
+                <button onclick="starting()" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -64,7 +70,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="toAboutVideo()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -76,7 +84,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="toContactPage()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -88,7 +98,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="getStarted()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -100,6 +112,7 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
             </div>
         </div>
     </div>
@@ -109,6 +122,7 @@ content.innerHTML = `
         <div class="container d-flex justify-content-center">
             <div class="row row-cols-1 row-cols-md-4 g-3">
                 <div class="col">
+                <button onclick="addNewList()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -120,7 +134,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="editList()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -132,7 +148,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="deleteList()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -144,7 +162,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="filterData()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -156,6 +176,7 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
             </div>
         </div>
     </div>
@@ -165,6 +186,7 @@ content.innerHTML = `
         <div class="container d-flex justify-content-center">
             <div class="row row-cols-1 row-cols-md-4 g-3">
                 <div class="col">
+                <button onclick="copyLinkWebsite()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -176,7 +198,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="monitoringCategories()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -188,7 +212,9 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
+                <button onclick="guideBook()">
                     <div class="card" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
@@ -200,8 +226,10 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
                 <div class="col">
-                    <div class="card" style="width: 100%;">
+                <button onclick="profileDev()">
+                    <div class="card" id="tutorial" style="width: 100%;">
   <div class="card-body">
   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
   <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
@@ -212,14 +240,120 @@ content.innerHTML = `
   </div>
 </div>
                 </div>
+                </button>
             </div>
         </div>
     </div>
-            <video autoplay muted loop playsinline id="myVideo" style="height: 500px !important;">
-                <source src="/src/assets/videos/starting-awal.mp" type="video/mp4">
-                    Video Error!
-                </source>
-            </video>
 
+    <div id="outVideo" class="rounded-3 container-sm containerOutVideo animate__animated animate__fadeInDown"></div>
 
+    <a href="#top">
+        <button type="button" class="rounded-circle btn btn-success d-flex justify-content-end ms-auto" style="margin-top: 20% !important; padding: 10px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5"/>
+            </svg>
+        </button>
+    </a>
 `
+
+function starting() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/starting-awal.mp4">
+        </video>
+    `
+}
+function toAboutVideo() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/about.mp4">
+        </video>
+    `
+}
+function toContactPage() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/contact.mp4">
+        </video>
+    `
+}
+function getStarted() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/todo.mp4">
+        </video>
+    `
+}
+
+
+function addNewList() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/add.mp4">
+        </video>
+    `
+}
+function editList() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/edit.mp4">
+        </video>
+    `
+}
+function deleteList() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/hapus.mp4">
+        </video>
+    `
+}
+function filterData() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/filter.mp4">
+        </video>
+    `
+}
+
+
+
+function copyLinkWebsite() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/salinLink.mp4">
+        </video>
+    `
+}
+function monitoringCategories() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/monitoring.mp4">
+        </video>
+    `
+}
+function guideBook() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/guide.mp4">
+        </video>
+    `
+}
+function profileDev() {
+    const outVideo = document.getElementById('outVideo');
+    outVideo.innerHTML = `
+        <video autoplay muted loop playsinline class="outVideo">
+            <source src="/src/assets/videos/profileDev.mp4">
+        </video>
+    `
+}
