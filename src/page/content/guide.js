@@ -43,7 +43,7 @@ content.innerHTML = `
                 </svg>                
                 
                 <h2 class="mt-3">To The Point</h2>
-                <p class="card-text">Fitur kami bersifat to the point dan tidak banyak embel embel yang mengganggu. Memungkinkan pengguna mendapat experience yang menyenangkan</p>
+                <p class="card-text">Fitur kami bersifat to the point dan tidak banyak embel embel yang mengganggu. Memungkinkan pengguna mendapat good experience</p>
             </div>
         </div>
         </div>
